@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Equações do Segundo Grau</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Máquina Resolutiva
+            <br>
+            de Equações do Segundo Grau
+        </h1>
+    </header>
+    <main>
+        <div id="machine">
+            <form>
+                <div id="inputs_n">
+                    <div id="cnt_input_a">
+                        <label for="input_a"><strong>Valor de <span>a</span>:</strong></label>
+                        <input type="number" name="input_a" id="input_a" class="input_n">
+                    </div>
+                    <div id="cnt_input_b">
+                        <label for="input_b"><strong>Valor de <span>b</span>:</strong></label>
+                        <input type="number" name="input_b" id="input_b" class="input_n">
+                    </div>
+                    <div id="cnt_input_c">
+                        <label for="input_c"><strong>Valor de <span>c</span>:</strong></label>
+                        <input type="number" name="input_c" id="input_c" class="input_n">
+                    </div>
+                </div>
+                <input type="button" value="Enviar" onclick="f_submit()" id="btn_submit">
+            </form>
+            <div id="cnt_result">
+                <p><span><strong>Resultado:</strong></span></p>
+                <div id="result">
+                    <div id="equation"></div>
+                    <div id="resolution"></div>
+                </div>
+            </div>
+        </div>
+        <div id="inf">
+            <small>É possível que alguns resultados tenham aproximações de 4 casas decimais.</small>
+        </div>
+    </main>
+    <footer>
+        <p><strong>&copy;Matheexx</strong></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
