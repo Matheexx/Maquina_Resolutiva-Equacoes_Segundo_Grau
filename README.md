@@ -1,0 +1,1 @@
+# Maquina_Resolutiva-Equacoes_Segundo_Grau
