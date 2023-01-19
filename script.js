@@ -61,12 +61,12 @@ function verifyDelta(a, b, c) {
 function resolution(a, b, c) {
     const delta = verifyDelta(a, b, c)[1];
     if(delta == 0) {
-        const x = ((-b + Math.sqrt(delta))/(2 * a)).toFixed(4).replace(/\.?0+$/, '').replace(".", ",");
+        const x = ((-b + Math.sqrt(delta))/(2 * a)).toFixed(4).replace(/\.?0+$/, '');
         return `<strong><span>x</span> = <span>${x}</span> <br> <span>S</span> = {<span>${x}</span>}</strong>`;
     }
     else if(delta > 0) {
-        const x1 = ((-b + Math.sqrt(delta))/(2 * a)).toFixed(4).replace(/\.?0+$/, '').replace(".", ",");
-        const x2 = ((-b - Math.sqrt(delta))/(2 * a)).toFixed(4).replace(/\.?0+$/, '').replace(".", ",");
+        const x1 = ((-b + Math.sqrt(delta))/(2 * a)).toFixed(4).replace(/\.?0+$/, '');
+        const x2 = ((-b - Math.sqrt(delta))/(2 * a)).toFixed(4).replace(/\.?0+$/, '');
         return `<strong><span>x1</span> = <span>${x1}</span> <br> <span>x2</span> = <span>${x2}</span> <br> <span>S</span> = {<span>${x1}</span>, <span>${x2}</span>}</strong>`;
     }
 }
